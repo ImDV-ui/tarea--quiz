@@ -1,102 +1,152 @@
 [
   {
     "pregunta": "¿Cuál es el río más largo del mundo?",
-    "respuestas": {
-      "a": "Nilo",
-      "b": "Amazonas",
-      "c": "Misisipi",
-      "d": "Yangtsé"
-    },
-    "correcta": "b"
+    "respuestas": { "a": "Nilo", "b": "Amazonas", "c": "Misisipi", "d": "Yangtsé" },
+    "correcta": "b",
+    "datoCurioso": "Aunque por décadas se consideró que el Nilo era el más largo, mediciones más recientes en 2007 confirmaron que el Amazonas lo supera por más de 100 km."
   },
   {
     "pregunta": "¿En qué año cayó el Muro de Berlín?",
-    "respuestas": {
-      "a": "1989",
-      "b": "1991",
-      "c": "1987",
-      "d": "1990"
-    },
-    "correcta": "a"
+    "respuestas": { "a": "1989", "b": "1991", "c": "1987", "d": "1990" },
+    "correcta": "a",
+    "datoCurioso": "La caída del Muro de Berlín fue un evento espontáneo iniciado por un anuncio confuso de un oficial de Alemania Oriental, que llevó a miles de personas a cruzar la frontera."
   },
   {
     "pregunta": "¿Quién escribió 'Cien años de soledad'?",
-    "respuestas": {
-      "a": "Mario Vargas Llosa",
-      "b": "Julio Cortázar",
-      "c": "Gabriel García Márquez",
-      "d": "Pablo Neruda"
-    },
-    "correcta": "c"
+    "respuestas": { "a": "Mario Vargas Llosa", "b": "Julio Cortázar", "c": "Gabriel García Márquez", "d": "Pablo Neruda" },
+    "correcta": "c",
+    "datoCurioso": "Gabriel García Márquez tardó 18 meses en escribir la novela. Durante ese tiempo, su familia acumuló una gran deuda, pero el éxito del libro fue inmediato."
   },
   {
     "pregunta": "¿Cuál es el océano más grande del mundo?",
-    "respuestas": {
-      "a": "Atlántico",
-      "b": "Índico",
-      "c": "Ártico",
-      "d": "Pacífico"
-    },
-    "correcta": "d"
+    "respuestas": { "a": "Atlántico", "b": "Índico", "c": "Ártico", "d": "Pacífico" },
+    "correcta": "d",
+    "datoCurioso": "El Océano Pacífico es tan grande que contiene más de la mitad del agua libre de la Tierra y es más grande que todas las masas de tierra del planeta combinadas."
   },
   {
     "pregunta": "¿Quién pintó la 'Mona Lisa'?",
-    "respuestas": {
-      "a": "Vincent van Gogh",
-      "b": "Pablo Picasso",
-      "c": "Leonardo da Vinci",
-      "d": "Miguel Ángel"
-    },
-    "correcta": "c"
+    "respuestas": { "a": "Vincent van Gogh", "b": "Pablo Picasso", "c": "Leonardo da Vinci", "d": "Miguel Ángel" },
+    "correcta": "c",
+    "datoCurioso": "La 'Mona Lisa' fue robada del Louvre en 1911. El ladrón, un empleado italiano, la tuvo escondida en su apartamento durante dos años antes de ser capturado."
   },
   {
-    "pregunta": "¿Cuál es el país más poblado de la Tierra?",
-    "respuestas": {
-      "a": "China",
-      "b": "India",
-      "c": "Estados Unidos",
-      "d": "Indonesia"
-    },
-    "correcta": "b"
+    "pregunta": "¿Qué elemento tiene el símbolo químico 'Au'?",
+    "respuestas": { "a": "Plata", "b": "Argón", "c": "Oro", "d": "Aluminio" },
+    "correcta": "c",
+    "datoCurioso": "El símbolo 'Au' proviene de la palabra latina para oro, 'aurum', que significa 'amanecer brillante'. El oro es tan maleable que una onza (28 gramos) puede estirarse en un hilo de 80 km de largo."
   },
   {
-    "pregunta": "¿Qué elemento tiene el símbolo químico 'O'?",
-    "respuestas": {
-      "a": "Oro",
-      "b": "Plata",
-      "c": "Oxígeno",
-      "d": "Osmio"
-    },
-    "correcta": "c"
+    "pregunta": "¿En qué continente se encuentra la fosa de las Marianas?",
+    "respuestas": { "a": "América", "b": "África", "c": "Oceanía", "d": "Asia" },
+    "correcta": "d",
+    "datoCurioso": "La fosa de las Marianas, ubicada en Asia cerca de Japón, es el punto más profundo de los océanos. La presión en el fondo es más de 1000 veces la presión atmosférica normal."
   },
   {
-    "pregunta": "¿En qué continente se encuentra Egipto?",
-    "respuestas": {
-      "a": "Asia",
-      "b": "Europa",
-      "c": "América",
-      "d": "África"
-    },
-    "correcta": "d"
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "respuestas": { "a": "Sídney", "b": "Melbourne", "c": "Canberra", "d": "Perth" },
+    "correcta": "c",
+    "datoCurioso": "Canberra fue elegida como capital en 1908 como un compromiso entre las dos ciudades más grandes y rivales, Sídney y Melbourne."
   },
   {
-    "pregunta": "¿Cuál es la capital de Japón?",
-    "respuestas": {
-      "a": "Pekín",
-      "b": "Seúl",
-      "c": "Tokio",
-      "d": "Bangkok"
-    },
-    "correcta": "c"
+    "pregunta": "¿Quién fue el primer ser humano en viajar al espacio?",
+    "respuestas": { "a": "Neil Armstrong", "b": "Yuri Gagarin", "c": "Buzz Aldrin", "d": "John Glenn" },
+    "correcta": "b",
+    "datoCurioso": "El cosmonauta soviético Yuri Gagarin orbitó la Tierra en 1961. Se dice que sus primeras palabras desde el espacio fueron: 'Veo la Tierra. Es tan hermosa'."
   },
   {
-    "pregunta": "¿Quién fue el primer ser humano en pisar la Luna?",
-    "respuestas": {
-      "a": "Yuri Gagarin",
-      "b": "Buzz Aldrin",
-      "c": "Michael Collins",
-      "d": "Neil Armstrong"
-    },
-    "correcta": "d"
+    "pregunta": "¿Qué país tiene más pirámides que Egipto?",
+    "respuestas": { "a": "México", "b": "Perú", "c": "Sudán", "d": "Grecia" },
+    "correcta": "c",
+    "datoCurioso": "Sudán tiene más de 200 pirámides nubias, casi el doble que Egipto. Sin embargo, son más pequeñas y empinadas que las egipcias."
+  },
+  {
+    "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "respuestas": { "a": "Fémur", "b": "Tibia", "c": "Húmero", "d": "Peroné" },
+    "correcta": "a",
+    "datoCurioso": "El fémur, ubicado en el muslo, es tan fuerte que puede soportar hasta 30 veces el peso de una persona. Es más resistente que el concreto."
+  },
+  {
+    "pregunta": "¿Qué artista es famoso por cortar parte de su propia oreja?",
+    "respuestas": { "a": "Salvador Dalí", "b": "Pablo Picasso", "c": "Claude Monet", "d": "Vincent van Gogh" },
+    "correcta": "d",
+    "datoCurioso": "Van Gogh se cortó el lóbulo de la oreja izquierda durante una crisis nerviosa y se lo entregó a una prostituta. Este evento marcó el inicio de su declive mental."
+  },
+  {
+    "pregunta": "¿En qué país se originaron los Juegos Olímpicos?",
+    "respuestas": { "a": "Italia", "b": "Grecia", "c": "Egipto", "d": "Roma" },
+    "correcta": "b",
+    "datoCurioso": "Los Juegos Olímpicos antiguos se celebraron en Olimpia, Grecia, desde el 776 a.C. hasta el 393 d.C. Los ganadores recibían una corona de olivo como único premio."
+  },
+  {
+    "pregunta": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
+    "respuestas": { "a": "Venus", "b": "Marte", "c": "Júpiter", "d": "Saturno" },
+    "correcta": "b",
+    "datoCurioso": "Su característico color rojo se debe a la gran cantidad de óxido de hierro (herrumbre) en su superficie y en su atmósfera."
+  },
+  {
+    "pregunta": "¿Cuál es el animal más grande que ha existido en la Tierra?",
+    "respuestas": { "a": "Megalodón", "b": "Argentinosaurus", "c": "Ballena Azul", "d": "Tiranosaurio Rex" },
+    "correcta": "c",
+    "datoCurioso": "La Ballena Azul no solo es el animal más grande actualmente, sino de toda la historia. Su corazón es del tamaño de un coche pequeño y su lengua puede pesar tanto como un elefante."
+  },
+  {
+    "pregunta": "¿Qué famoso científico desarrolló la teoría de la relatividad?",
+    "respuestas": { "a": "Isaac Newton", "b": "Galileo Galilei", "c": "Nikola Tesla", "d": "Albert Einstein" },
+    "correcta": "d",
+    "datoCurioso": "A Einstein le ofrecieron la presidencia de Israel en 1952, pero la rechazó diciendo que carecía de la 'aptitud natural y la experiencia para tratar con personas'."
+  },
+  {
+    "pregunta": "En la mitología griega, ¿quién era el dios del mar?",
+    "respuestas": { "a": "Zeus", "b": "Hades", "c": "Poseidón", "d": "Apolo" },
+    "correcta": "c",
+    "datoCurioso": "Poseidón era uno de los Tres Grandes dioses del Olimpo junto a sus hermanos Zeus (cielo) y Hades (inframundo). Su arma y símbolo era un poderoso tridente."
+  },
+  {
+    "pregunta": "¿Cuál es la sustancia natural más dura de la Tierra?",
+    "respuestas": { "a": "Acero", "b": "Diamante", "c": "Cuarzo", "d": "Grafeno" },
+    "correcta": "b",
+    "datoCurioso": "Los diamantes están formados por átomos de carbono bajo una presión y temperatura inmensas. La única cosa que puede rayar un diamante es otro diamante."
+  },
+  {
+    "pregunta": "¿Qué civilización construyó Machu Picchu?",
+    "respuestas": { "a": "Azteca", "b": "Maya", "c": "Inca", "d": "Olmeca" },
+    "correcta": "c",
+    "datoCurioso": "Machu Picchu fue construido en el siglo XV como una finca para el emperador inca Pachacútec. Estuvo oculto al mundo exterior hasta su descubrimiento en 1911."
+  },
+  {
+    "pregunta": "¿Cuál es el desierto más grande y cálido del mundo?",
+    "respuestas": { "a": "Gobi", "b": "Kalahari", "c": "Sáhara", "d": "Atacama" },
+    "correcta": "c",
+    "datoCurioso": "El desierto del Sáhara es tan grande como todo Estados Unidos. Aunque es famoso por su calor, las temperaturas nocturnas pueden bajar hasta el punto de congelación."
+  },
+  {
+    "pregunta": "¿De qué país es originaria la pasta?",
+    "respuestas": { "a": "Grecia", "b": "China", "c": "Italia", "d": "Francia" },
+    "correcta": "b",
+    "datoCurioso": "Aunque Italia popularizó la pasta, la evidencia más antigua de fideos se encontró en China, en un cuenco de 4,000 años de antigüedad."
+  },
+  {
+    "pregunta": "¿Cuál es el idioma más hablado en el mundo por número de hablantes nativos?",
+    "respuestas": { "a": "Inglés", "b": "Español", "c": "Chino Mandarín", "d": "Hindi" },
+    "correcta": "c",
+    "datoCurioso": "El Chino Mandarín tiene más de 900 millones de hablantes nativos, casi el triple que el español, que ocupa el segundo lugar."
+  },
+  {
+    "pregunta": "¿Qué instrumento mide la intensidad de los terremotos?",
+    "respuestas": { "a": "Barómetro", "b": "Sismógrafo", "c": "Termómetro", "d": "Anemómetro" },
+    "correcta": "b",
+    "datoCurioso": "Los primeros sismógrafos fueron inventados en la antigua China. Podían detectar terremotos lejanos y, según la leyenda, indicar la dirección de su epicentro."
+  },
+  {
+    "pregunta": "¿Cuántos corazones tiene un pulpo?",
+    "respuestas": { "a": "Uno", "b": "Dos", "c": "Tres", "d": "Cuatro" },
+    "correcta": "c",
+    "datoCurioso": "Un pulpo tiene tres corazones: dos bombean sangre a las branquias y el tercero al resto del cuerpo. Curiosamente, el tercer corazón deja de latir cuando el pulpo nada."
+  },
+  {
+    "pregunta": "¿Cuál fue la primera película de Walt Disney?",
+    "respuestas": { "a": "Pinocho", "b": "Fantasía", "c": "Dumbo", "d": "Blancanieves y los Siete Enanitos" },
+    "correcta": "d",
+    "datoCurioso": "Estrenada en 1937, 'Blancanieves' fue el primer largometraje de animación de la historia. Muchos en la industria predijeron que sería un fracaso, pero fue un éxito rotundo."
   }
 ]

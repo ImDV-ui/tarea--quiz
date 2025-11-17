@@ -1,11 +1,13 @@
+/* --- TEMA EDUCATIVO Y ELEGANTE --- */
+
 :root {
-    --color-principal: #2c3e50; /* Azul oscuro y sobrio */
-    --color-fondo: #f8f9fa;     /* Un gris muy claro para el fondo */
-    --color-texto: #343a40;     /* Texto gris oscuro */
+    --color-principal: #2c3e50;
+    --color-fondo: #f8f9fa;
+    --color-texto: #343a40;
     --color-blanco: #ffffff;
     --color-borde: #dee2e6;
-    --color-correcto: #28a745;   /* Verde para aciertos */
-    --color-incorrecto: #dc3545; /* Rojo para errores */
+    --color-correcto: #28a745;
+    --color-incorrecto: #dc3545;
     --sombra-suave: 0 10px 25px rgba(0, 0, 0, 0.08);
     --font-titulo: 'Playfair Display', serif;
     --font-cuerpo: 'Lato', sans-serif;
@@ -94,24 +96,11 @@ body {
     transform: translateY(-2px);
 }
 
-.respuesta-btn:disabled {
-    cursor: not-allowed;
-}
+.respuesta-btn:disabled { cursor: not-allowed; }
+.respuesta-btn.correcta { background-color: var(--color-correcto); border-color: var(--color-correcto); color: var(--color-blanco); }
+.respuesta-btn.incorrecta { background-color: var(--color-incorrecto); border-color: var(--color-incorrecto); color: var(--color-blanco); }
 
-.respuesta-btn.correcta {
-    background-color: var(--color-correcto);
-    border-color: var(--color-correcto);
-    color: var(--color-blanco);
-}
-
-.respuesta-btn.incorrecta {
-    background-color: var(--color-incorrecto);
-    border-color: var(--color-incorrecto);
-    color: var(--color-blanco);
-}
-
-#siguiente-btn,
-.resultado-final button {
+#siguiente-btn, .resultado-final button {
     background-color: var(--color-principal);
     color: var(--color-blanco);
     border: none;
@@ -126,43 +115,43 @@ body {
     transition: background-color 0.2s ease;
 }
 
-#siguiente-btn {
-    display: none;
+#siguiente-btn { display: none; }
+#siguiente-btn:hover, .resultado-final button:hover { background-color: #3f5b7a; }
+
+#progress-container { width: 100%; background-color: #e9ecef; border-radius: 5px; margin-bottom: 2rem; height: 10px; }
+#progress-bar { height: 100%; width: 0%; background-color: var(--color-principal); border-radius: 5px; transition: width 0.4s ease-in-out; }
+
+.resultado-final { display: none; text-align: center; }
+.resultado-final h2 { font-family: var(--font-titulo); color: var(--color-principal); margin-bottom: 1rem; }
+.resultado-final p { font-size: 1.2rem; margin-bottom: 2rem; }
+
+/* --- Estilos para el Dato Curioso --- */
+.dato-curioso-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--color-principal);
+    display: none; /* Oculto por defecto */
 }
 
-#siguiente-btn:hover,
-.resultado-final button:hover {
-    background-color: #3f5b7a;
+.dato-curioso-container.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-#progress-container {
-    width: 100%;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    height: 10px;
+#dato-curioso-texto {
+    font-style: italic;
+    color: #5a6268;
+    line-height: 1.6;
 }
 
-#progress-bar {
-    height: 100%;
-    width: 0%;
-    background-color: var(--color-principal);
-    border-radius: 5px;
-    transition: width 0.4s ease-in-out;
-}
-
-.resultado-final {
-    display: none;
-    text-align: center;
-}
-
-.resultado-final h2 {
-    font-family: var(--font-titulo);
-    color: var(--color-principal);
-    margin-bottom: 1rem;
-}
-
-.resultado-final p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -7,18 +7,33 @@ const mensajeFinalEl = document.getElementById('mensaje-final');
 const puntuacionEl = document.getElementById('puntuacion');
 const quizHeaderEl = document.querySelector('.quiz-header');
 const progressBarEl = document.getElementById('progress-bar');
+const datoCuriosoContainerEl = document.getElementById('dato-curioso-container');
+const datoCuriosoTextoEl = document.getElementById('dato-curioso-texto');
 
 // Variables para el estado del quiz
 let preguntas = [];
 let preguntaActualIndex = 0;
 let puntuacion = 0;
 
+// Función para barajar un array (Algoritmo Fisher-Yates)
+function barajarArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 // Función para cargar las preguntas desde el archivo JSON
 async function cargarPreguntas() {
     try {
         const response = await fetch('data/preguntas.json');
         if (!response.ok) throw new Error('No se pudieron cargar las preguntas.');
-        preguntas = await response.json();
+        const todasLasPreguntas = await response.json();
+
+        // Barajar todas las preguntas y seleccionar 10
+        barajarArray(todasLasPreguntas);
+        preguntas = todasLasPreguntas.slice(0, 10);
+
         iniciarQuiz();
     } catch (error) {
         preguntaEl.textContent = error.message;
@@ -28,7 +43,7 @@ async function cargarPreguntas() {
 // Función para iniciar o reiniciar el quiz
 function iniciarQuiz() {
     preguntaActualIndex = 0;
-    puntuacion = 0;
+    puntuacion = 0; // CORRECCIÓN APLICADA AQUÍ
     resultadoFinalEl.style.display = 'none';
     quizHeaderEl.style.display = 'block';
     quizHeaderEl.classList.remove('fade-out');
@@ -44,6 +59,7 @@ function actualizarBarraProgreso() {
 
 // Función para mostrar la pregunta actual y sus respuestas
 function mostrarPregunta() {
+    datoCuriosoContainerEl.classList.remove('visible');
     actualizarBarraProgreso();
     respuestasContainerEl.innerHTML = '';
     const preguntaActual = preguntas[preguntaActualIndex];
@@ -63,7 +79,8 @@ function mostrarPregunta() {
 function seleccionarRespuesta(e) {
     const botonSeleccionado = e.target;
     const respuestaSeleccionada = botonSeleccionado.dataset.respuesta;
-    const respuestaCorrecta = preguntas[preguntaActualIndex].correcta;
+    const preguntaActual = preguntas[preguntaActualIndex];
+    const respuestaCorrecta = preguntaActual.correcta;
 
     Array.from(respuestasContainerEl.children).forEach(boton => {
         boton.disabled = true;
@@ -78,10 +95,16 @@ function seleccionarRespuesta(e) {
         botonSeleccionado.classList.add('incorrecta');
     }
 
+    const datoCurioso = preguntaActual.datoCurioso;
+    if (datoCurioso) {
+        datoCuriosoTextoEl.textContent = datoCurioso;
+        datoCuriosoContainerEl.classList.add('visible');
+    }
+
     siguienteBtn.style.display = 'block';
 }
 
-// Event listener para el botón "Siguiente" con transición
+// Event listener para el botón "Siguiente"
 siguienteBtn.addEventListener('click', () => {
     quizHeaderEl.classList.add('fade-out');
 
@@ -92,11 +115,10 @@ siguienteBtn.addEventListener('click', () => {
             quizHeaderEl.classList.remove('fade-out');
             siguienteBtn.style.display = 'none';
         } else {
-            // Actualiza la barra al 100% al finalizar
             progressBarEl.style.width = '100%';
             mostrarResultadoFinal();
         }
-    }, 400); // Un poco más de tiempo para una transición más suave
+    }, 400);
 });
 
 // Función para mostrar la pantalla de resultados finales
