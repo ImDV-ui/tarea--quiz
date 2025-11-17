@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial Quiz - Cultura General</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="pregunta">Cargando pregunta...</h2>
+            <div id="respuestas-container">
+                <!-- Los botones de respuesta se generarán aquí -->
+            </div>
+        </div>
+        <button id="siguiente-btn">Siguiente pregunta</button>
+        <div id="resultado-final" class="resultado-final">
+            <h2 id="mensaje-final"></h2>
+            <p id="puntuacion"></p>
+            <button onclick="location.reload()">Volver a empezar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

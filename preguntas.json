@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "¿Cuál es el río más largo del mundo?",
+    "respuestas": {
+      "a": "Nilo",
+      "b": "Amazonas",
+      "c": "Misisipi",
+      "d": "Yangtsé"
+    },
+    "correcta": "b"
+  },
+  {
+    "pregunta": "¿En qué año cayó el Muro de Berlín?",
+    "respuestas": {
+      "a": "1989",
+      "b": "1991",
+      "c": "1987",
+      "d": "1990"
+    },
+    "correcta": "a"
+  },
+  {
+    "pregunta": "¿Quién escribió 'Cien años de soledad'?",
+    "respuestas": {
+      "a": "Mario Vargas Llosa",
+      "b": "Julio Cortázar",
+      "c": "Gabriel García Márquez",
+      "d": "Pablo Neruda"
+    },
+    "correcta": "c"
+  },
+  {
+    "pregunta": "¿Cuál es el océano más grande del mundo?",
+    "respuestas": {
+      "a": "Atlántico",
+      "b": "Índico",
+      "c": "Ártico",
+      "d": "Pacífico"
+    },
+    "correcta": "d"
+  },
+  {
+    "pregunta": "¿Quién pintó la 'Mona Lisa'?",
+    "respuestas": {
+      "a": "Vincent van Gogh",
+      "b": "Pablo Picasso",
+      "c": "Leonardo da Vinci",
+      "d": "Miguel Ángel"
+    },
+    "correcta": "c"
+  },
+  {
+    "pregunta": "¿Cuál es el país más poblado de la Tierra?",
+    "respuestas": {
+      "a": "China",
+      "b": "India",
+      "c": "Estados Unidos",
+      "d": "Indonesia"
+    },
+    "correcta": "b"
+  },
+  {
+    "pregunta": "¿Qué elemento tiene el símbolo químico 'O'?",
+    "respuestas": {
+      "a": "Oro",
+      "b": "Plata",
+      "c": "Oxígeno",
+      "d": "Osmio"
+    },
+    "correcta": "c"
+  },
+  {
+    "pregunta": "¿En qué continente se encuentra Egipto?",
+    "respuestas": {
+      "a": "Asia",
+      "b": "Europa",
+      "c": "América",
+      "d": "África"
+    },
+    "correcta": "d"
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Japón?",
+    "respuestas": {
+      "a": "Pekín",
+      "b": "Seúl",
+      "c": "Tokio",
+      "d": "Bangkok"
+    },
+    "correcta": "c"
+  },
+  {
+    "pregunta": "¿Quién fue el primer ser humano en pisar la Luna?",
+    "respuestas": {
+      "a": "Yuri Gagarin",
+      "b": "Buzz Aldrin",
+      "c": "Michael Collins",
+      "d": "Neil Armstrong"
+    },
+    "correcta": "d"
+  }
+]
