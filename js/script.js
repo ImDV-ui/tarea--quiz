@@ -15,7 +15,7 @@ let preguntas = [];
 let preguntaActualIndex = 0;
 let puntuacion = 0;
 
-// Función para barajar un array (Algoritmo Fisher-Yates)
+// Función para barajar un array
 function barajarArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -43,7 +43,7 @@ async function cargarPreguntas() {
 // Función para iniciar o reiniciar el quiz
 function iniciarQuiz() {
     preguntaActualIndex = 0;
-    puntuacion = 0; // CORRECCIÓN APLICADA AQUÍ
+    puntuacion = 0
     resultadoFinalEl.style.display = 'none';
     quizHeaderEl.style.display = 'block';
     quizHeaderEl.classList.remove('fade-out');
@@ -104,7 +104,7 @@ function seleccionarRespuesta(e) {
     siguienteBtn.style.display = 'block';
 }
 
-// Event listener para el botón "Siguiente"
+// Para el botón "Siguiente"
 siguienteBtn.addEventListener('click', () => {
     quizHeaderEl.classList.add('fade-out');
 
@@ -126,10 +126,17 @@ function mostrarResultadoFinal() {
     quizHeaderEl.style.display = 'none';
     siguienteBtn.style.display = 'none';
     resultadoFinalEl.style.display = 'block';
-    
+
     mensajeFinalEl.textContent = '¡Quiz Completado!';
     puntuacionEl.textContent = `Tu puntuación final es: ${puntuacion} de ${preguntas.length} preguntas acertadas.`;
 }
 
-// Iniciar el quiz al cargar la página
-cargarPreguntas();
+// Para el botón "Volver a Empezar"
+document.getElementById('reiniciar-btn').addEventListener('click', iniciarQuiz);
+
+// Para el botón "Comenzar Quiz"
+document.getElementById('start-btn').addEventListener('click', () => {
+    document.getElementById('start-menu').style.display = 'none';
+    document.getElementById('quiz').style.display = 'block';
+    cargarPreguntas();
+});
